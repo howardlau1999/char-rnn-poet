@@ -20,7 +20,7 @@ The model is very simple, and no pre-trained word embeddings are utilized.
 
 # Dataset
 
-The corpus was downloaded from [https://github.com/chinese-poetry/chinese-poetry](https://github.com/chinese-poetry/chinese-poetry) and the training data was created by filtering Qi Jue poems from Tang poems, resulting in 10922 poems. Each poem begins with "<SOP>" token and ends with "<EOP>" token, and each hanzi is considered a word. You can create your own dataset by `Data Preprocess.ipynb`
+The corpus was downloaded from [https://github.com/chinese-poetry/chinese-poetry](https://github.com/chinese-poetry/chinese-poetry) and the training data was created by filtering Qi Jue poems from Tang poems, resulting in 10922 poems. Each poem begins with `<SOP>` token and ends with `<EOP>` token, and each hanzi is considered a word. You can create your own dataset by `Data Preprocess.ipynb`
 
 # Examples
 
