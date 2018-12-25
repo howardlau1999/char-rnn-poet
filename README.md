@@ -1,7 +1,13 @@
 # Char RNN Poet
 Simple two-layer LSTM network to generate Tang poems（七绝）
 
+# Environment
+
+PyTorch 1.0.0-dev
+TorchText
+
 ## Model
+
 Two-layer uni-directional LSTM network with word embedding size 300 and hidden size 1024.
 
 The model is very simple, and no pre-trained word embeddings are utilized. 
@@ -12,7 +18,13 @@ The model is very simple, and no pre-trained word embeddings are utilized.
 - Apply attention
 - Apply pre-trained word-embeddings
 
+# Dataset
+
+The corpus was downloaded from [https://github.com/chinese-poetry/chinese-poetry](https://github.com/chinese-poetry/chinese-poetry) and the training data was created by filtering Qi Jue poems from Tang poems, resulting in 10922 poems. Each poem begins with "<SOP>" token and ends with "<EOP>" token, and each hanzi is considered a word. You can create your own dataset by `Data Preprocess.ipynb`
+
 # Examples
+
+The model was trained on a single Nvidia GTX Titan X with batch size 2048 for 2 days (~15000 epochs) which consumed ~11GB RAM.
 
 ```
 Epoch 15729 Loss: 1.304158
