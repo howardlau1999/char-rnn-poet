@@ -3,8 +3,8 @@ Simple two-layer LSTM network to generate Tang poems（七绝）
 
 # Environment
 
-PyTorch 1.0.0-dev
-TorchText
+PyTorch 1.8.1
+TorchText 0.9.0
 
 ## Model
 
